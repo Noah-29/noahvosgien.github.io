@@ -1,0 +1,176 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto:wght@300;400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Police de base */
+    margin: 0;
+    padding: 20px; /* Ajout d'un espacement à l'intérieur du corps */
+    background-color: #f0f0f0; /* Couleur de fond de la page */
+    color: #333; /* Couleur du texte */
+    overflow-x: hidden; /* Empêche le débordement horizontal */
+    background-image: url('background.jpg'); /* Image d'arrière-plan */
+    background-size: cover; /* Couvrir toute la page */
+    background-position: center; /* Centrer l'image */
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #ffffff; /* Couleur de fond de l'en-tête */
+    padding: 10px 20px; /* Espacement dans l'en-tête */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+/* Contenu de l'en-tête */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Nom */
+.name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    color: black;
+    margin-right: auto;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+    position: relative; /* Correction pour les sous-menus */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* Sous-menu */
+.navbar li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+.navbar li ul li {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+/* Conteneur de profil */
+.profile-container {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+    text-align: center; /* Centrer le texte et le bouton */
+}
+
+/* Styles des titres */
+h1, p {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Styles pour le bouton d'information */
+.info-button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin-top: 15px; /* Ajustement ici pour être plus proche de BTS SIO */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: center;
+}
+
+.info-button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Fond semi-transparent derrière le texte des compétences */
+.competences-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px; /* Espace au-dessus des compétences */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustement du texte des compétences */
+.competences-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.competences-section li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.competences-section strong {
+    color: darkgreen; /* Couleur du texte en gras */
+}
+
+/* Section du CV */
+.cv-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px; /* Sépare le CV des autres sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Iframe */
+iframe {
+    border: none; /* Enlève la bordure de l'iframe */
+    width: 100%; /* Rendre l'iframe responsive */
+    height: 600px; /* Ajuster la hauteur de l'iframe */
+}
+
+/* Styles pour le footer */
+footer {
+    margin-top: 50px; /* Espace au-dessus du footer */
+    text-align: center; /* Centrer le texte du footer */
+    color: #666; /* Couleur du texte du footer */
+    font-size: 0.9em; /* Taille de police réduite */
+}
